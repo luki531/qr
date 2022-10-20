@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <!-- <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" /> -->
+  <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+</head>
+
+<style>
+
+
+
+</style>
+
+
+
+
+<body>
+  <div>Anagramm foer gestorbene</div>
+  <p> Annagramm für gestorbene </p>
+  <input align="right" type="text" id="test-input"/>
+  <button align="middle" id="submit-button" type="submit" pys-onClick="my_function">OK</button>
+  <div id="test-output"></div>
+
+<py-script>
+
+def my_function(*args, **kwargs):
+
+
+    text = Element('test-input').element.value
+    text = text.lower()
+    if text == "betrogenes":
+        Element('test-output').element.innerText = "Correct: The code is 9991"
+    else:
+        Element('test-output').element.innerText = "Nope"
+</py-script>
+
+  </body>
+</html>
