@@ -36,6 +36,11 @@
   <button align="middle" id="submit-button3" type="submit3" pys-onClick="my_function3">OK</button>
   <div id="test-output3"></div>
 
+  <p> Geben sie das Passwort ein!</p>
+  <input align="right" type="text4" id="test-input4"/>
+  <button align="middle" id="submit-button4" type="submit4" pys-onClick="my_function4">OK</button>
+  <div id="test-output4"></div>
+
 <py-script>
 
 def my_function(*args, **kwargs):
@@ -79,6 +84,17 @@ def my_function3(*args, **kwargs):
         Element('test-output3').element.innerText = "Korrekt: Die vierte Zahl ist: 5"
     else:
         Element('test-output3').element.innerText = "Nope"
+
+def my_function4(*args, **kwargs):
+
+
+    text4 = Element('test-input4').element.value
+    text4 = text4.strip()
+    if text4 == "4975":
+        Element('test-output4').element.innerText = "https://bit.ly/3gk1Yfr"
+    else:
+        Element('test-output4').element.innerText = "Nope"
+
 
 
 </py-script>
