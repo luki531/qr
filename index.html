@@ -42,7 +42,7 @@ def my_function(*args, **kwargs):
 
 
     text = Element('test-input').element.value
-    text = text.lower()
+    text = text.lower().strip()
     if text == "betrogenes":
         Element('test-output').element.innerText = "Korrekt: Die erste Zahl ist: 4"
     else:
@@ -53,7 +53,7 @@ def my_function1(*args, **kwargs):
 
 
     text1 = Element('test-input1').element.value
-    text1 = text1.lower()
+    text1 = text1.lower().strip()
     if text1 == "ungeraten":
         Element('test-output1').element.innerText = "Korrekt: Die zweite Zahl ist: 9"
     else:
@@ -64,7 +64,7 @@ def my_function2(*args, **kwargs):
 
 
     text2 = Element('test-input2').element.value
-    text2 = text2.lower()
+    text2 = text2.lower().strip()
     if text2 == "kurtisane":
         Element('test-output2').element.innerText = "Korrekt: Die dritte Zahl ist: 7"
     else:
@@ -74,12 +74,11 @@ def my_function3(*args, **kwargs):
 
 
     text3 = Element('test-input3').element.value
-    text3 = text3.lower()
+    text3 = text3.lower().strip()
     if text3 == "arbeitskraft":
         Element('test-output3').element.innerText = "Korrekt: Die vierte Zahl ist: 5"
     else:
         Element('test-output3').element.innerText = "Nope"
-
 
 
 </py-script>
