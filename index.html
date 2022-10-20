@@ -26,7 +26,7 @@
   <button align="middle" id="submit-button1" type="submit1" pys-onClick="my_function1">OK</button>
   <div id="test-output1"></div>
 
-  <p> Annagram für Austrinke</p>
+  <p> Annagram für austrinke</p>
   <input align="right" type="text2" id="test-input2"/>
   <button align="middle" id="submit-button2" type="submit2" pys-onClick="my_function2">OK</button>
   <div id="test-output2"></div>
@@ -48,7 +48,7 @@ def my_function(*args, **kwargs):
 
     text = Element('test-input').element.value
     text = text.lower().strip()
-    if text == "betrogenes":
+    if text == "betrogenes" or text == "geborstene":
         Element('test-output').element.innerText = "Korrekt: Die erste Zahl ist: 4"
     else:
         Element('test-output').element.innerText = "Nope"
