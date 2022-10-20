@@ -15,13 +15,26 @@
 
 
 
-
 <body>
-  <div>Anagramm foer gestorbene</div>
-  <p> Annagramm für gestorbene </p>
+  <p> Annagram für gestorbene </p>
   <input align="right" type="text" id="test-input"/>
   <button align="middle" id="submit-button" type="submit" pys-onClick="my_function">OK</button>
   <div id="test-output"></div>
+
+  <p> Annagram für Agenturen</p>
+  <input align="right" type="text1" id="test-input1"/>
+  <button align="middle" id="submit-button1" type="submit1" pys-onClick="my_function1">OK</button>
+  <div id="test-output1"></div>
+
+  <p> Annagram für Austrinke</p>
+  <input align="right" type="text2" id="test-input2"/>
+  <button align="middle" id="submit-button2" type="submit2" pys-onClick="my_function2">OK</button>
+  <div id="test-output2"></div>
+
+  <p> Annagram für Strafbarkeit</p>
+  <input align="right" type="text3" id="test-input3"/>
+  <button align="middle" id="submit-button3" type="submit3" pys-onClick="my_function3">OK</button>
+  <div id="test-output3"></div>
 
 <py-script>
 
@@ -31,9 +44,44 @@ def my_function(*args, **kwargs):
     text = Element('test-input').element.value
     text = text.lower()
     if text == "betrogenes":
-        Element('test-output').element.innerText = "Correct: The code is 9991"
+        Element('test-output').element.innerText = "Korrekt: Die erste Zahl ist: 4"
     else:
         Element('test-output').element.innerText = "Nope"
+
+
+def my_function1(*args, **kwargs):
+
+
+    text1 = Element('test-input1').element.value
+    text1 = text1.lower()
+    if text1 == "ungeraten":
+        Element('test-output1').element.innerText = "Korrekt: Die zweite Zahl ist: 9"
+    else:
+        Element('test-output1').element.innerText = "Nope"
+
+
+def my_function2(*args, **kwargs):
+
+
+    text2 = Element('test-input2').element.value
+    text2 = text2.lower()
+    if text2 == "kurtisane":
+        Element('test-output2').element.innerText = "Korrekt: Die dritte Zahl ist: 7"
+    else:
+        Element('test-output2').element.innerText = "Nope"
+
+def my_function3(*args, **kwargs):
+
+
+    text3 = Element('test-input3').element.value
+    text3 = text3.lower()
+    if text3 == "arbeitskraft":
+        Element('test-output3').element.innerText = "Korrekt: Die vierte Zahl ist: 5"
+    else:
+        Element('test-output3').element.innerText = "Nope"
+
+
+
 </py-script>
 
   </body>
