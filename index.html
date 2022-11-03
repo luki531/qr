@@ -67,7 +67,7 @@ def my_function(*args, **kwargs):
     text = Element('test-input').element.value
     text = text.lower().strip()
     if text == "geist" or text == "der geist":
-        Element('test-output').element.innerText = "geiSt"
+        Element('test-output').element.innerText = "der geiSt"
     else:
         Element('test-output').element.innerText = "Nope"
 
@@ -78,7 +78,7 @@ def my_function1(*args, **kwargs):
     text1 = Element('test-input1').element.value
     text1 = text1.lower().strip()
     if text1 == "die fledermaus" or text1 == "fledermaus":
-        Element('test-output1').element.innerText = "flEdermaus"
+        Element('test-output1').element.innerText = "die flEdermaus"
     else:
         Element('test-output1').element.innerText = "Nope"
 
@@ -89,7 +89,7 @@ def my_function2(*args, **kwargs):
     text2 = Element('test-input2').element.value
     text2 = text2.lower().strip()
     if text2 == "der trank" or text2 == "trank":
-        Element('test-output2').element.innerText = "traNk"
+        Element('test-output2').element.innerText = "der traNk"
     else:
         Element('test-output2').element.innerText = "Nope"
 
@@ -98,7 +98,7 @@ def my_function3(*args, **kwargs):
 
     text3 = Element('test-input3').element.value
     text3 = text3.lower().strip()
-    if text3 == "die hexe" or text3 == "hexe":
+    if text3 == "die hexe" or text3 == "die hexe":
         Element('test-output3').element.innerText = "hExe"
     else:
         Element('test-output3').element.innerText = "Nope"
@@ -109,7 +109,7 @@ def my_function4(*args, **kwargs):
     text4 = Element('test-input4').element.value
     text4 = text4.lower().strip()
     if text4 == "die kürbis" or text4 == "kürbis" or text4 == "die kuerbis" or text4 == "kuerbis":
-        Element('test-output4').element.innerText =  "kürBis"
+        Element('test-output4').element.innerText =  "die kürBis"
     else:
         Element('test-output4').element.innerText = "Nope"
 
@@ -119,7 +119,7 @@ def my_function5(*args, **kwargs):
     text5 = Element('test-input5').element.value
     text5 = text5.lower().strip()
     if text5 == "die süßigkeiten" or text5 == "süßigkeiten" or text5 == "die suessigkeiten" or text5 == "suessigkeiten":
-        Element('test-output5').element.innerText = "süßIgkeiten"
+        Element('test-output5').element.innerText = "die süßIgkeiten"
     else:
         Element('test-output5').element.innerText = "Nope"
 
