@@ -6,9 +6,8 @@
   <!-- <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" /> -->
   <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
 </head>
-
+<link rel="stylesheet" href="mystyle.css">
 <style>
-
 
 
 </style>
@@ -16,33 +15,47 @@
 
 
 <body>
-  <a href="https://de.wiktionary.org/wiki/Verzeichnis:Deutsch/Anagramme%2B">Hier kann man die Antworten finden.</a>
 
-  
-  <p> Anagramm für gestorbene </p>
+  <p> Er ist durchsichtig wie ein Kristall,<br>Er geht durch die Wand, <br> Fleigt die ganze Nacht an Halloween <br> Und die Leute haben vor ihm Angst. </p>
   <input align="right" type="text" id="test-input"/>
   <button align="middle" id="submit-button" type="submit" pys-onClick="my_function">OK</button>
   <div id="test-output"></div>
 
-  <p> Anagramm für Agenturen</p>
+  <p> Symbol der Nacht, <br> Symbol des Bösen, <br> Sie schläft kopfüber!</p>
   <input align="right" type="text1" id="test-input1"/>
   <button align="middle" id="submit-button1" type="submit1" pys-onClick="my_function1">OK</button>
   <div id="test-output1"></div>
 
-  <p> Anagramm für Austrinke</p>
+  <p>  Es wird in einem eisernen und großen Kessel gekocht, <br>
+Wird für magische Hexerei verwendet! <br>
+Wenn man jemanden verzaubern willst, <br>
+Dann lass ihn dieses Getränk trinken.  </p>
   <input align="right" type="text2" id="test-input2"/>
   <button align="middle" id="submit-button2" type="submit2" pys-onClick="my_function2">OK</button>
   <div id="test-output2"></div>
 
-  <p> Anagramm für Strafbarkeit</p>
+  <p>  Sie trägt einen spitzen schwarzen Hut, <br>
+Bringt den Kindern sehr viel Angst, <br>
+Kocht Tränke in einem gusseisernen Topf, <br>
+Und fliegt im Dunkeln auf einem Besen! </p>
   <input align="right" type="text3" id="test-input3"/>
   <button align="middle" id="submit-button3" type="submit3" pys-onClick="my_function3">OK</button>
   <div id="test-output3"></div>
 
-  <p> Geben sie das Passwort ein!</p>
+  <p> Sie ist orange und rund, <br>
+Sie kann als Kopf der Vogelscheuche sein, <br>
+Darin werden Gesichter geschnitten <br>
+Und Kerzen hinein gestellt.</p>
   <input align="right" type="text4" id="test-input4"/>
   <button align="middle" id="submit-button4" type="submit4" pys-onClick="my_function4">OK</button>
   <div id="test-output4"></div>
+
+  <p> Wenn an die Tür die bösen Geister klopfen, <br>
+muss man ihnen etwas geben,<br>
+damit sie keine schrecklichen Taten machen.</p>
+  <input align="right" type="text5" id="test-input5"/>
+  <button align="middle" id="submit-button5" type="submit5" pys-onClick="my_function5">OK</button>
+  <div id="test-output5"></div>
 
 <py-script>
 
@@ -51,8 +64,8 @@ def my_function(*args, **kwargs):
 
     text = Element('test-input').element.value
     text = text.lower().strip()
-    if text == "betrogenes" or text == "geborstene":
-        Element('test-output').element.innerText = "Korrekt: Die erste Zahl ist: 4"
+    if text == "geist" or text == "der geist":
+        Element('test-output').element.innerText = "der GeiSt"
     else:
         Element('test-output').element.innerText = "Nope"
 
@@ -62,8 +75,8 @@ def my_function1(*args, **kwargs):
 
     text1 = Element('test-input1').element.value
     text1 = text1.lower().strip()
-    if text1 == "ungeraten":
-        Element('test-output1').element.innerText = "Korrekt: Die zweite Zahl ist: 9"
+    if text1 == "die fledermaus" or text1 == "fledermaus":
+        Element('test-output1').element.innerText = "die FlEdermaus"
     else:
         Element('test-output1').element.innerText = "Nope"
 
@@ -73,8 +86,8 @@ def my_function2(*args, **kwargs):
 
     text2 = Element('test-input2').element.value
     text2 = text2.lower().strip()
-    if text2 == "kurtisane":
-        Element('test-output2').element.innerText = "Korrekt: Die dritte Zahl ist: 7"
+    if text2 == "der trank" or text2 == "trank":
+        Element('test-output2').element.innerText = "der TraNk"
     else:
         Element('test-output2').element.innerText = "Nope"
 
@@ -83,8 +96,8 @@ def my_function3(*args, **kwargs):
 
     text3 = Element('test-input3').element.value
     text3 = text3.lower().strip()
-    if text3 == "arbeitskraft":
-        Element('test-output3').element.innerText = "Korrekt: Die vierte Zahl ist: 5"
+    if text3 == "die hexe" or text3 == "hexe":
+        Element('test-output3').element.innerText = "die HExe"
     else:
         Element('test-output3').element.innerText = "Nope"
 
@@ -92,11 +105,22 @@ def my_function4(*args, **kwargs):
 
 
     text4 = Element('test-input4').element.value
-    text4 = text4.strip()
-    if text4 == "4975":
-        Element('test-output4').element.innerText = "Öffnen Sie mich: https://bit.ly/3gk1Yfr"
+    text4 = text4.lower().strip()
+    if text4 == "die kürbis" or text4 == "kürbis" or text4 == "die kuerbis" or text4 == "kuerbis":
+        Element('test-output4').element.innerText =  "die KürBis"
     else:
         Element('test-output4').element.innerText = "Nope"
+
+def my_function5(*args, **kwargs):
+
+
+    text5 = Element('test-input5').element.value
+    text5 = text5.lower().strip()
+    if text5 == "die süßigkeiten" or text5 == "süßigkeiten" or text5 == "die suessigkeiten" or text5 == "suessigkeiten":
+        Element('test-output5').element.innerText = "die SüßIgkeiten"
+    else:
+        Element('test-output5').element.innerText = "Nope"
+
 
 
 
