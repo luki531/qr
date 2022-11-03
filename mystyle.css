@@ -1,8 +1,6 @@
 body {
   color: orange;
   background-color: black;
-  background-image: url("bg.jpg");
-  background-size: cover;
 }
 
 h1 {
